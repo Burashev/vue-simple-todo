@@ -1,4 +1,7 @@
-# test-todo-app
+# Todo app
+>A simple todo application with localStorage using Vue 3
+
+![Image](https://user-images.githubusercontent.com/46999316/129385540-541311fc-00a0-4ff4-897a-9d8a27468661.png)
 
 ## Project setup
 ```
@@ -13,11 +16,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration

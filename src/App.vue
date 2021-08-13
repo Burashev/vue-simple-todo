@@ -1,30 +1,49 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="container">
+    <div class="view-container">
+      <router-view></router-view>
+    </div>
   </div>
-  <router-view/>
 </template>
 
+<script>
+export default {
+  name: 'app',
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+input,
+select,
+button {
+  font-size: 1rem;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  background-color: #c9efff;
+  min-height: 100vh;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+</style>
+
+<style scoped>
+.view-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 </style>
